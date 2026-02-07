@@ -128,47 +128,12 @@ const App: React.FC = () => {
   }, [sections]);
 
   return (
-    <div className="relative h-screen w-screen bg-black overflow-hidden select-none">
-      {/* Background Glow */}
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-400/10 blur-[150px] rounded-full pointer-events-none z-0" />
-      
-      {/* Vertical Scroller */}
-      <div 
-        ref={scrollContainerRef}
-        className="snap-container z-10 relative"
-      >
-        {sections.map((section) => (
-          <div 
-            key={section.type}
-            className="snap-section"
-          >
-            {section.component}
-          </div>
-        ))}
-      </div>
-
-      <Navbar activeSection={activeSection} onNavClick={scrollToSection} />
-
-      {/* Vertical progress bar */}
-      <div className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-50">
-        {sections.map((section) => (
-          <div 
-            key={section.type}
-            className={`w-1 transition-all duration-500 rounded-full ${
-              activeSection === section.type ? 'h-12 bg-sky-400' : 'h-3 bg-white/20'
-            }`}
-          />
-        ))}
-      </div>
-
-      {/* Global Archive Overlay (The "Other Page") */}
-      <GlobalGallery 
-        projects={PROJECTS_DATA} 
-        isOpen={isArchiveOpen} 
-        onClose={() => setIsArchiveOpen(false)} 
-      />
-    </div>
+function App() {
+  return (
+    <h1 style={{ color: "white", textAlign: "center", marginTop: "100px" }}>
+      ✅ Website Working
+    </h1>
   );
-};
+}
 
 export default App;
