@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { ProjectData } from '../types';
+import { ProjectData } from './types';
 
 interface GlobalGalleryProps {
   projects: ProjectData[];
