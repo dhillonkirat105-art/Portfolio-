@@ -1,12 +1,13 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Contact from './components/Contact';
-import ProjectSection from './components/Projects';
-import Article from './components/Article';
-import GlobalGallery from './components/GlobalGallery';
-import { SectionType } from './types';
+import Navbar from "./Navbar"
+import Hero from "./Hero"
+import About from "./About"
+import Projects from "./Projects"
+import Stats from "./Stats"
+import Contact from "./Contact"
+import Article from "./Article"
+import GlobalGallery from "./GlobalGallery"
 import { PROJECTS_DATA } from './constants';
 
 const App: React.FC = () => {
