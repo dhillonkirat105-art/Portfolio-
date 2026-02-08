@@ -174,10 +174,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-Open(false)} 
-      />
-    </div>
-  );
-};
-
-export default App;
